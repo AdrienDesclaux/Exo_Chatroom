@@ -1,0 +1,11 @@
+@use '../../styles/variables' as v;
+
+.app {
+  max-width: 30rem;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: v.$light-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

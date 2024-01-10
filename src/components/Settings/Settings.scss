@@ -1,0 +1,48 @@
+@use '../../styles/variables' as v;
+
+.settings {
+
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  padding: 10px;
+  border-radius: 0.3rem;
+
+  &__button {
+    border-radius: 20rem;
+    color: v.$text-blue;
+    background-color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition-duration: 1s ease-in-out;
+
+    &.animated {
+      transform: rotate(0);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    transition: 1s;
+
+    input {
+      margin: 0.3rem 0;
+      border-radius: 0.5rem;
+      padding: 0.2rem;
+    }
+
+    button {
+      border-radius: 0.3rem;
+      color: white;
+      background-color: v.$light-blue;
+      margin-top: 5px;
+    }
+  }
+}
